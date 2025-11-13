@@ -8,6 +8,7 @@
 <h1>Examen Servidor Rodrigo Marin Jaime</h1>
 <body>
 <?php
+// Defino las variables
 $nombre_alumno = "Rodrigo Marin Jaime";
 $modulo = "Desarrollo Web en Entorno Servidor";
 $nota_media = 7.5;
@@ -15,9 +16,11 @@ $es_matriculado = true;
 
 echo "<h1>Alumno: $nombre_alumno</h1>";
 echo "<h2>Módulo: $modulo</h2>";
+//Aqui hago la diferencia entre las comillas simples y dobles
 echo "Mi nota media actual es: $nota_media <br>";
 echo 'Mi nota media actual es: $nota_media';
 
+// uso el if para la nota media, "si ha sacado mas de un 9 tiene un sobresaliente, si no..."
 if ($nota_media >= 9) {
     echo "<p>Sobresaliente</p>";
 } elseif ($nota_media >= 7) {
@@ -28,6 +31,7 @@ if ($nota_media >= 9) {
     echo "<p>Suspenso</p>";
 }
 
+//compruebo si el alumno esta matriculado, pues es un boolean
 if ($es_matriculado) {
     echo "<p>Estado: Alumno matriculado.</p>";
 } else {
@@ -35,6 +39,7 @@ if ($es_matriculado) {
 }
 
 
+//hago la tabla con el bucle while
 
 echo "<table>";
 
@@ -46,7 +51,7 @@ while ($i <= 5) {
     echo "<td>$i</td>";
     echo "</tr>";
     
-    $i++;
+    $i++; //suma 1 al contador hasta llegar a 5, que es el limite que puse antes
 }
 
 echo "</table>";

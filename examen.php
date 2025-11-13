@@ -8,6 +8,8 @@
 <h1>Examen Servidor Rodrigo Marin Jaime</h1>
 <body>
 <?php
+//Rodrigo Marín Jaime
+
 // Defino las variables
 $nombre_alumno = "Rodrigo Marin Jaime";
 $modulo = "Desarrollo Web en Entorno Servidor";
